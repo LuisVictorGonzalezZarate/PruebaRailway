@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot CDMX - Tu Guía Turística Virtual</title>
+    <meta name="description"
+        content="Descubre la Ciudad de México con nuestro asistente virtual. Encuentra las mejores atracciones, gastronomía y experiencias culturales.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-comments"></i>
+                    <span>Chatbot CDMX</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#atracciones" class="nav-link">Atracciones</a></li>
+                    <li><a href="#gastronomia" class="nav-link">Gastronomía</a></li>
+                    <li><a href="#cultura" class="nav-link">Cultura</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <button class="chat-btn-header" onclick="toggleChat()">
+                    <i class="fas fa-robot"></i>
+                    Hablar con Asistente
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <img src="assets/images/oydizldADuxY.jpg" alt="Zócalo Ciudad de México" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Descubre la Ciudad de México</h1>
+            <p class="hero-subtitle">Tu asistente virtual para una experiencia única en la capital mexicana</p>
+            <button class="hero-cta" onclick="toggleChat()">
+                <i class="fas fa-comments"></i>
+                Iniciar Chat
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Atracciones Section -->
+    <section id="atracciones" class="attractions">
+        <div class="container">
+            <h2 class="section-title">Atracciones Populares</h2>
+            <p class="section-subtitle">Explora los lugares más emblemáticos de la Ciudad de México</p>
+
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <img src="assets/images/Oi46kxJjPkri.jpg" alt="Zócalo" class="attraction-image">
+                    <div class="attraction-content">
+                        <h3>Zócalo</h3>
+                        <p>La plaza principal de la ciudad, corazón histórico y cultural de México.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Historia</span>
+                            <span class="tag">Arquitectura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="assets/images/N1P9ijyCYLFp.jpg" alt="Palacio de Bellas Artes" class="attraction-image">
+                    <div class="attraction-content">
+                        <h3>Palacio de Bellas Artes</h3>
+                        <p>Icónico teatro y centro cultural con arquitectura art nouveau y art déco.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Arte</span>
+                            <span class="tag">Cultura</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="assets/images/AdGXtHLq5VMA.jpg" alt="Casa Azul - Museo Frida Kahlo"
+                        class="attraction-image">
+                    <div class="attraction-content">
+                        <h3>Casa Azul</h3>
+                        <p>Museo dedicado a Frida Kahlo en su antigua residencia de Coyoacán.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Arte</span>
+                            <span class="tag">Historia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="assets/images/EQSH0M0L5z4b.webp" alt="Castillo de Chapultepec" class="attraction-image">
+                    <div class="attraction-content">
+                        <h3>Castillo de Chapultepec</h3>
+                        <p>Único castillo real en América con vistas panorámicas de la ciudad.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Historia</span>
+                            <span class="tag">Vistas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="assets/images/IK98sjB9hDtg.jpg" alt="Teotihuacán" class="attraction-image">
+                    <div class="attraction-content">
+                        <h3>Teotihuacán</h3>
+                        <p>Antigua ciudad prehispánica con las pirámides del Sol y la Luna.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Arqueología</span>
+                            <span class="tag">Prehispánico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="attraction-card">
+                    <img src="assets/images/VefWXUvHKIBN.jpg" alt="Pirámide del Sol" class="attraction-image">
+                    <div class="attraction-content">
+                        <h3>Pirámide del Sol</h3>
+                        <p>Una de las estructuras más grandes de Mesoamérica en Teotihuacán.</p>
+                        <div class="attraction-tags">
+                            <span class="tag">Arqueología</span>
+                            <span class="tag">Aventura</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gastronomía Section -->
+    <section id="gastronomia" class="gastronomy">
+        <div class="container">
+            <h2 class="section-title">Gastronomía Local</h2>
+            <p class="section-subtitle">Saborea los platillos más auténticos de la cocina mexicana</p>
+
+            <div class="food-carousel">
+                <div class="food-track">
+                    <div class="food-card">
+                        <img src="assets/images/doGlIjfJe0AU.jpg" alt="Tacos al Pastor" class="food-image">
+                        <div class="food-content">
+                            <h3>Tacos al Pastor</h3>
+                            <p>Deliciosos tacos con carne marinada, piña y salsas tradicionales.</p>
+                            <div class="food-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="assets/images/ANKnoGmfV3NZ.jpg" alt="Mole Poblano" class="food-image">
+                        <div class="food-content">
+                            <h3>Mole Poblano</h3>
+                            <p>Salsa compleja con más de 20 ingredientes, patrimonio culinario mexicano.</p>
+                            <div class="food-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="assets/images/9ABVj4RGYLAJ.jpg" alt="Chiles en Nogada" class="food-image">
+                        <div class="food-content">
+                            <h3>Chiles en Nogada</h3>
+                            <p>Platillo patriótico con los colores de la bandera mexicana.</p>
+                            <div class="food-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="assets/images/cqDkfp3C5kvC.jpg" alt="Pozole" class="food-image">
+                        <div class="food-content">
+                            <h3>Pozole</h3>
+                            <p>Sopa tradicional con maíz cacahuazintle, carne y condimentos.</p>
+                            <div class="food-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="food-card">
+                        <img src="assets/images/d6toD8o5uKBs.jpg" alt="Tamales" class="food-image">
+                        <div class="food-content">
+                            <h3>Tamales</h3>
+                            <p>Masa de maíz rellena de diversos ingredientes, envuelta en hoja.</p>
+                            <div class="food-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="moveCarousel(1)">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultura Section -->
+    <section id="cultura" class="culture">
+        <div class="container">
+            <h2 class="section-title">Experiencias Culturales</h2>
+            <p class="section-subtitle">Sumérgete en las tradiciones y el arte mexicano</p>
+
+            <div class="culture-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="assets/images/IRSdiHHr0AVY.jpg" alt="Día de Muertos" class="culture-image">
+                        <h3>Día de Muertos</h3>
+                        <p>Celebración tradicional que honra a los difuntos con altares, flores y comida.</p>
+                        <span class="timeline-date">Noviembre 1-2</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="assets/images/8nbYfctIKm9k.jpg" alt="Mariachi" class="culture-image">
+                        <h3>Música Mariachi</h3>
+                        <p>Patrimonio cultural inmaterial de la humanidad, símbolo de México.</p>
+                        <span class="timeline-date">Todo el año</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="assets/images/V8GIyyRNspqu.jpg" alt="Lucha Libre" class="culture-image">
+                        <h3>Lucha Libre</h3>
+                        <p>Espectáculo deportivo y cultural único con luchadores enmascarados.</p>
+                        <span class="timeline-date">Martes y Viernes</span>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <img src="assets/images/Nw9K19FLDgXd.webp" alt="Artesanías" class="culture-image">
+                        <h3>Artesanías</h3>
+                        <p>Trabajos manuales tradicionales que reflejan la riqueza cultural mexicana.</p>
+                        <span class="timeline-date">Todo el año</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros visitantes</h2>
+
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"El chatbot me ayudó a planificar mi viaje perfecto. Descubrí lugares increíbles que no
+                            conocía."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=60&h=60&fit=crop&crop=face"
+                                alt="María García">
+                            <div>
+                                <h4>María García</h4>
+                                <span>Turista de España</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Excelente servicio. Las recomendaciones gastronómicas fueron perfectas para mi familia."</p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face"
+                                alt="John Smith">
+                            <div>
+                                <h4>John Smith</h4>
+                                <span>Turista de Estados Unidos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Me encantó poder chatear en tiempo real y obtener respuestas inmediatas sobre la ciudad."
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face"
+                                alt="Ana Silva">
+                            <div>
+                                <h4>Ana Silva</h4>
+                                <span>Turista de Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-dots">
+                <span class="dot active" onclick="currentTestimonial(1)"></span>
+                <span class="dot" onclick="currentTestimonial(2)"></span>
+                <span class="dot" onclick="currentTestimonial(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Chatbot CDMX</h3>
+                    <p>Tu asistente virtual para descubrir la Ciudad de México</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Enlaces Útiles</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#atracciones">Atracciones</a></li>
+                        <li><a href="#gastronomia">Gastronomía</a></li>
+                        <li><a href="#cultura">Cultura</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#">Términos de Uso</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@chatbotcdmx.com</p>
+                        <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chatbot CDMX. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Widget -->
+    <div id="chatWidget" class="chat-widget">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chat-title">
+                    <h4>Asistente CDMX</h4>
+                    <span class="chat-status">En línea</span>
+                </div>
+            </div>
+            <button class="chat-close" onclick="toggleChat()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                <div class="message-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="message-content">
+                    <p>¡Hola! Soy tu asistente virtual para la Ciudad de México. ¿En qué puedo ayudarte hoy?</p>
+                    <span class="message-time">Ahora</span>
+                </div>
+            </div>
+            <!-- Section for amplified response -->
+            <div id="amplifiedSection"
+                style="display: none; padding: 10px; margin-top: 10px; border-top: 1px solid #eee;"></div>
+        </div>
+
+        <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." onkeypress="handleKeyPress(event)">
+            <button id="sendButton" onclick="sendMessage()">
+                <i class="fas fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button id="chatToggle" class="chat-toggle" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Marked.js for Markdown rendering -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
