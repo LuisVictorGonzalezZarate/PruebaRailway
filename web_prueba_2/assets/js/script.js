@@ -227,7 +227,7 @@ async function sendMessage() {
     showTypingIndicator();
 
     try {
-        const webhookUrl = "http://localhost:5678/webhook/4f19d435-a22a-40a4-ab34-a49d12e106d1";
+        const webhookUrl = "https://primary-production-06d9.up.railway.app/webhook/4f19d435-a22a-40a4-ab34-a49d12e106d1";
         const urlWithParams = `${webhookUrl}?message=${encodeURIComponent(message)}`;
 
         const response = await fetch(urlWithParams, {
