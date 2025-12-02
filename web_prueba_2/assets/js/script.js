@@ -5,7 +5,7 @@ let isChatOpen = false;
 let currentSessionId = ''; // Nueva variable para el ID de sesión
 
 // Configuración del chatbot
-const n8n_API_URL = 'http://localhost:5678/webhook/4f19d435-a22a-40a4-ab34-a49d12e106d1';
+const n8n_API_URL = 'https://primary-production-06d9.up.railway.app/webhook/4f19d435-a22a-40a4-ab34-a49d12e106d1';
 
 // Configuración del chatbot para n8n (adaptado de nocodeveloper.com/chat.js)
 const n8nConfig = {
